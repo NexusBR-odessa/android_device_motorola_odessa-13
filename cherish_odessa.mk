@@ -22,21 +22,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/motorola/odessa/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
 # Flags
 TARGET_DISABLE_EPPE := true
 
-# WitAqua Flags
+# Cherish Flags
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_BLUR := false
-WITAQUA_MAINTAINER := "Miguel Barreto"
-
-# Signing Build
-#-include vendor/infinity-priv/keys/keys.mk
+CHERISH_BUILD_TYPE := Unofficial
+WITH_GMS := true
+CHERISH_MAINTAINER := @miguelbarretoo
+CHERISH_CHIPSET := SM6150
+CHERISH_BATTERY := 5000mAh
+CHERISH_DISPLAY := 1080x2400
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_odessa
+PRODUCT_NAME := cherish_odessa
 PRODUCT_DEVICE := odessa
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto g(9) plus
