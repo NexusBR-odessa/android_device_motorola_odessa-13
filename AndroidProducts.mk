@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_odessa.mk
+    $(LOCAL_DIR)/miku_odessa.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_odessa-bp2a-eng \
-    lineage_odessa-bp2a-user \
-    lineage_odessa-bp2a-userdebug
+    miku_odessa-bp2a-eng \
+    miku_odessa-bp2a-user \
+    miku_odessa-bp2a-userdebug
