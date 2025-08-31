@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/miku_odessa.mk
+    $(LOCAL_DIR)/voltage_odessa.mk
 
 COMMON_LUNCH_CHOICES := \
-    miku_odessa-bp2a-eng \
-    miku_odessa-bp2a-user \
-    miku_odessa-bp2a-userdebug
+    voltage_odessa-bp2a-eng \
+    voltage_odessa-bp2a-user \
+    voltage_odessa-bp2a-userdebug
