@@ -22,11 +22,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/motorola/odessa/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/miku/config/common_full_phone.mk)
+$(call inherit-product, vendor/miku/build/product/miku_product.mk)
 
 # Flags
 TARGET_DISABLE_EPPE := true
 MIKU_MASTER := MiguelitoChanUwU
+MIKU_GAPPS := true
 
 # Cherish Flags
 TARGET_BOOT_ANIMATION_RES := 1080
