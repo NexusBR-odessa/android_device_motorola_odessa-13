@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/voltage_odessa.mk
+    $(LOCAL_DIR)/aosp_odessa.mk
 
 COMMON_LUNCH_CHOICES := \
-    voltage_odessa-bp2a-eng \
-    voltage_odessa-bp2a-user \
-    voltage_odessa-bp2a-userdebug
+    aosp_odessa-bp2a-eng \
+    aosp_odessa-bp2a-user \
+    aosp_odessa-bp2a-userdebug
