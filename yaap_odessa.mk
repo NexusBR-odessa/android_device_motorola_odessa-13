@@ -22,7 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/motorola/odessa/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
 # Flags
 TARGET_DISABLE_EPPE := true
@@ -32,7 +32,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_BLUR := false
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_odessa
+PRODUCT_NAME := yaap_odessa
 PRODUCT_DEVICE := odessa
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto g(9) plus
