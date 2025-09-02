@@ -22,17 +22,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/motorola/odessa/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Flags
 TARGET_DISABLE_EPPE := true
 
-# Cherish Flags
+# RisingOSS Flags
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_BLUR := false
+RISING_MAINTAINER := @miguelbarretoo
+WITH_GMS := true
+TARGET_USES_PICO_GAPPS := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := yaap_odessa
+PRODUCT_NAME := lineage_odessa
 PRODUCT_DEVICE := odessa
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto g(9) plus
@@ -44,6 +47,9 @@ PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 # Build info
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="odessa_retail-user 11 RPAS31.Q2-59-17-4-5-5 af8e3 release-keys" \
-    BuildFingerprint=motorola/odessa_retail/odessa:11/RPAS31.Q2-59-17-4-5-5/af8e3:user/release-keys  
+    BuildFingerprint=motorola/odessa_retail/odessa:11/RPAS31.Q2-59-17-4-5-5/af8e3:user/release-keys \
+    RisingChipset="Snapdragon 730G" \
+    RisingMaintainer="@miguelbarretoo"
+  
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
